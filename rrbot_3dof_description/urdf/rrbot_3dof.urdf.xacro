@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<robot name="rrbot_3dof">
+  <link name="base_link">
+  </link>
+  <joint name="j0" type="fixed">
+    <parent link="base_link"/>
+    <child link="l0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  <link name="l0">
+    <visual>
+      <geometry>
+        <box size="1 1 0.5"/>
+      </geometry>
+      <origin xyz="0 0 0.25" rpy="0 0 0"/>
+    </visual>
+  </link>
+  <joint name="j1" type="revolute">
+    <parent link="l0"/>
+    <child link="l1"/>
+    <origin xyz="0 0 0.5" rpy="0 0 0"/>
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+  <link name="l1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.2" length="1.0"/>
+      </geometry>
+      <origin xyz="0 0 0.5" rpy="0 0 0"/>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+  <joint name="j2" type="revolute">
+    <parent link="l1"/>
+    <child link="l2"/>
+    <origin xyz="0 0 1" rpy="0 0 0"/>
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+    <axis xyz="1 0 0"/>
+  </joint>
+  <link name="l2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.2" length="1.0"/>
+      </geometry>
+      <origin xyz="0 0 0.5" rpy="0 0 0"/>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+  <joint name="j3" type="revolute">
+    <parent link="l2"/>
+    <child link="l3"/>
+    <origin xyz="0 0 1" rpy="0 0 0"/>
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1"/>
+    <axis xyz="1 0 0"/>
+  </joint>
+  <link name="l3">
+    <visual>
+      <geometry>
+        <cylinder radius="0.2" length="1.0"/>
+      </geometry>
+      <origin xyz="0 0 0.5" rpy="0 0 0"/>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+  <!-- ros2_control plugin -->
+  <ros2_control name="RRBotSystemPositionOnly" type="system">
+    <hardware>
+      <plugin>mock_components/GenericSystem</plugin>
+    </hardware>
+    <joint name="j1">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="j2">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="j3">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+</robot>
